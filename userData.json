@@ -6,5 +6,13 @@
     "password": "user1234",
     "phoneNumber": "01555555555",
     "address": "gulshan"
+  },
+  {
+    "firstName": "new",
+    "lastName": "user",
+    "email": "newuser@gmail.com",
+    "password": "user1234",
+    "phoneNumber": "01555555555",
+    "address": "gulshan"
   }
 ]

@@ -1,8 +1,8 @@
 import { test, expect } from "@playwright/test";
-import { readFromJSONFile } from "../pages/utils";
-import LoginPage from "../pages/LoginPage";
+import { readFromJSONFile } from "./utils";
+import LoginPage from "../LoginPage";
 
-test("User can login successfully", async ({ page }) => {
+export const login = async (page) => {
   await page.goto("/");
   await expect(
     page.getByRole("heading", { name: "Welcome to daily finance" })
@@ -15,4 +15,4 @@ test("User can login successfully", async ({ page }) => {
   } else {
     console.error("No user data found in JSON for login.");
   }
-});
+};

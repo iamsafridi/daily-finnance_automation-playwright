@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 import Registration from "../pages/Registration";
-import { writeToJSONFile } from "../pages/utils";
+import { writeToJSONFile } from "../pages/utils/utils";
 
 test("User can register successfully", async ({ page }) => {
   await page.goto("/");
